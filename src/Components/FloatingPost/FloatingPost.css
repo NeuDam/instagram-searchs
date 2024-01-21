@@ -1,0 +1,78 @@
+.container-floater{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.416);
+  backdrop-filter: blur(10px);
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floater{
+  background-color: var(--terciary-color);
+  border-radius: 10px;
+  width: 80%;
+  max-height: 65vh;
+  box-shadow: 5px 5px 30px black;
+  overflow: hidden;
+}
+
+.slider{
+  width: 100%;
+  max-height: 50vh;
+  position: relative;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.media-floater{
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
+
+.information-post{
+  min-height: 15vh;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+
+.redirect-button, .close-button{
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 5px;
+  color: white;
+}
+.redirect-button{
+  left: 35px;
+}
+
+.close-button{
+  left: 5px;
+}
+
+.date{
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+
+.text{
+  padding-top: 15px;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  max-height: 15vh;
+  overflow: auto;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+:root{
+  --font-family: 'Macondo', cursive;
+  --background-color: #050a11;
+  --primary-color: #93ffa1e7;
+  --secondary-color: #599876;
+  --terciary-color: #1f2c38
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: white;
+  font-size: 16px;
+}

@@ -1,0 +1,64 @@
+.pic-username{
+  max-width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.section-top{
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  /* background-color: rgb(189, 7, 7); */
+  display: flex;
+  gap: .5em;
+}
+
+.name{
+  display: block;
+}
+
+.left-space{
+  width: 40%;
+  text-align: center;
+}
+
+.right-space{
+  font-size: 15px;
+  width: 60%;
+  position: relative;
+}
+
+.bio{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-height: 40%;
+  position: absolute;
+  top: 17%;
+  overflow: auto;
+}
+
+.basic-data{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 10px;
+}
+
+.child-basic-data{
+  text-align: center;
+}
+
+.section-bottom{
+  border-radius: 8px;
+  background-color: var(--terciary-color);
+  min-height: 10vh;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
