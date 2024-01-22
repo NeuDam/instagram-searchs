@@ -16,7 +16,7 @@
 
 .name{
   display: block;
-  font-size: 3.5vw;
+  font-size: 3.6vw;
 }
 
 .left-space{
@@ -39,7 +39,7 @@
   position: absolute;
   top: 17%;
   overflow: auto;
-  font-size: 3vw;
+  font-size: 3.2vw;
 }
 
 .basic-data{
@@ -54,7 +54,7 @@
 
 .child-basic-data{
   text-align: center;
-  font-size: 3vw;
+  font-size: 3.2vw;
 }
 
 .section-bottom{

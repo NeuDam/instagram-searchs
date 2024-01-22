@@ -131,3 +131,15 @@
     left: 70%;
   }
 }
+
+@media screen and (max-width:767px) {
+  .redirect-button, .close-button{
+    font-size: 5.5vw;
+  }
+  .redirect-button{
+    left: 9%;
+  }
+  .text, .date{
+    font-size: 3.5vw;
+  }
+}
