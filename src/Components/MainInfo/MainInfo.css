@@ -1,5 +1,6 @@
 .pic-username{
-  max-width: 120px;
+  width: 24vw;
+  max-width: 100%;
   height: auto;
   border-radius: 50%;
 }
@@ -7,7 +8,7 @@
 .section-top{
   width: 85%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 10vh;
   /* background-color: rgb(189, 7, 7); */
   display: flex;
   gap: .5em;
@@ -15,6 +16,7 @@
 
 .name{
   display: block;
+  font-size: 3.5vw;
 }
 
 .left-space{
@@ -37,6 +39,7 @@
   position: absolute;
   top: 17%;
   overflow: auto;
+  font-size: 3vw;
 }
 
 .basic-data{
@@ -51,14 +54,26 @@
 
 .child-basic-data{
   text-align: center;
+  font-size: 3vw;
 }
 
 .section-bottom{
   border-radius: 8px;
   background-color: var(--terciary-color);
-  min-height: 10vh;
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media screen and (min-width:1024px) {
+  .pic-username{
+    width: 13vw;
+  }
+  .name{
+    font-size: 2vw;
+  }
+  .child-basic-data, .bio{
+    font-size: 1.5vw;
+  }
 }

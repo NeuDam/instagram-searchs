@@ -18,11 +18,6 @@ function App() {
     setLoading(false)
   }
 
-  if(window.screen.width > 800){
-    console.log(window.screen.width)
-    return <p className='message-warning'>Sorry, in this moment PC version is not avaliable</p>
-  }
-
   return <>
 
     {loading && <Loader />}

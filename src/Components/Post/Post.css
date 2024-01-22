@@ -1,6 +1,6 @@
 .post{
   width: calc(100% / 3.1);
-  height: 200px;
+  height: 30vh;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: .5em;
@@ -28,7 +28,7 @@
 
 .child-b-post-info{
   text-align: center;
-  font-size: 16px;
+  font-size: 3.5vw;
 }
 
 .post:hover .basic-post-info{
@@ -44,5 +44,27 @@
 }
 
 .post:hover .black-effect{
-  box-shadow: 0 -5px 20px 30px rgba(0, 0, 0, 0.692);
+  box-shadow: 0 -5px 30px 3vh rgba(0, 0, 0, 0.692);
+}
+
+@media screen and (max-width:767px) {
+  .post{
+    height: 24vh;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .post{
+    height: 40vh;
+    cursor: pointer;
+  }
+  .child-b-post-info{
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .post{
+    height: 55vh
+  }
 }

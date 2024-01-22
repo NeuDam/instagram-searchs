@@ -1,7 +1,7 @@
 .header{
   top: 0;
   position: sticky;
-  padding: 10px 0;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   max-height: 8vh;
   background-color: var(--primary-color);
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 0 30px 5px var(--secondary-color);
+  box-shadow: 0 0 30px 5px var(--terciary-color);
   margin-bottom: 40px;
   backdrop-filter: blur(10px);
   z-index: 100;
@@ -17,7 +17,7 @@
 
 .form-username{
   display: block;
-  max-width: 70%;
+  max-height: 90%;
 }
 
 .container-input{
@@ -36,7 +36,7 @@
   min-width: 40%;
   height: 100%;
   padding: 2px 5px;
-  font-size: 16px;
+  font-size: 4vw;
   outline: none;
   border: none;
   background-color: var(--terciary-color);
@@ -52,7 +52,7 @@
   background-color: transparent;
   border: none;
   i{
-    font-size: 20px;
+    font-size: 4vw;
     color: white;
   }
 }
@@ -67,7 +67,7 @@ main{
 
 .message-warning{
   color: red;
-  font-size: 1.5em;
+  font-size: 5vw;
   width: 100%;
   text-align: center;
 }
@@ -88,5 +88,28 @@ main{
   img{
     border-radius: 8px;
     box-shadow: 0 0 10px white;
+  }
+}
+
+::-webkit-scrollbar{
+  background-color: var(--terciary-color);
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+
+@media screen and (min-width:1024px){
+  main{
+    max-width: 70%;
+  }
+  .header{
+    margin-bottom: 12vh;
+  }
+  .sumbit-button i,.username-input{
+    font-size: 1.5vw;
   }
 }

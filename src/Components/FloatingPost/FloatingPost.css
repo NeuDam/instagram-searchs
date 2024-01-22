@@ -42,26 +42,26 @@
 .information-post{
   min-height: 15vh;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 3vh;
 }
 
 
 .redirect-button, .close-button{
-  font-size: 1.5em;
+  font-size: 4vw;
   position: absolute;
   bottom: 5px;
   color: white;
 }
 .redirect-button{
-  left: 35px;
+  left: 7%;
 }
 
 .close-button{
-  left: 5px;
+  left: 1%;
 }
 
 .date{
-  font-size: 15px;
+  font-size: 3vw;
   position: absolute;
   bottom: 5px;
   right: 20px;
@@ -72,7 +72,62 @@
   display: block;
   width: 90%;
   margin: 0 auto;
-  max-height: 15vh;
+  max-height: 10vh;
   overflow: auto;
   text-align: center;
+  font-size: 3.5vw;
+}
+
+@media screen and (min-width:1024px){
+  .floater{
+    display: flex;
+    width:60%;
+    max-height: 90vh;
+  }
+  .slider{
+    min-width: 60%;
+    max-height: 85vh;
+  }
+  .text, .date{
+    font-size: 1.5vw;
+  }
+  .close-button, .redirect-button{
+    font-size: 2em;
+    top: 5px;
+    left: 80%;
+    cursor: pointer;
+    height: 0;
+  }
+  .redirect-button{
+    left: 63%;
+  }
+
+  .information-post{
+    display: flex;
+    align-items: center;
+    width: 45%;
+  }
+  .text{
+    max-height: 20vh;
+  }
+  .date{
+    width: 100%;
+    text-align: center
+  }
+}
+
+.slider::-webkit-scrollbar{
+  height: 8px;
+}
+
+@media screen and (min-width:1200px){
+  .floater{
+    width: 55%;
+  }
+  .close-button{
+    left: 85%;
+  }
+  .redirect-button{
+    left: 70%;
+  }
 }

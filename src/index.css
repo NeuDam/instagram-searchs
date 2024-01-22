@@ -3,7 +3,7 @@
 :root{
   --font-family: 'Macondo', cursive;
   --background-color: #050a11;
-  --primary-color: #93ffa1e7;
+  --primary-color: rgba(145, 64, 239, 0.829);
   --secondary-color: #599876;
   --terciary-color: #1f2c38
 }
