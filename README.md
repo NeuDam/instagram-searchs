@@ -1,8 +1,8 @@
-# React + Vite
+# InstagramSearchs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Search for anyone on Instagram, without logins
 
-Currently, two official plugins are available:
+## Issues
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**No photos**
+<p>If you can't see the photos (not loading) is by the Instagram CORS Policy, to evade that we use <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">CorsAnyWhere</a>, get into the page and ask for demo access (JUST CLICK) and then reload the webpage InstagramSearchs. That should works</p>
