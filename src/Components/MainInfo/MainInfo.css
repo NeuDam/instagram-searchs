@@ -1,14 +1,17 @@
 .pic-username{
-  width: 24vw;
-  max-width: 100%;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1/1;
   height: auto;
   border-radius: 50%;
 }
 
 .section-top{
   width: 85%;
-  margin: 0 auto;
-  margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: 7vh;
   /* background-color: rgb(189, 7, 7); */
   display: flex;
   gap: .5em;
@@ -20,7 +23,7 @@
 }
 
 .left-space{
-  width: 40%;
+  width: 35%;
   text-align: center;
 }
 
@@ -59,7 +62,6 @@
 
 .section-bottom{
   border-radius: 8px;
-  background-color: var(--terciary-color);
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -67,9 +69,6 @@
 }
 
 @media screen and (min-width:1024px) {
-  .pic-username{
-    width: 13vw;
-  }
   .name{
     font-size: 2vw;
   }

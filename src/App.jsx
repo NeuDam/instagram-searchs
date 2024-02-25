@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import testData from './mock.json'
 import './App.css'
 import MainInfo from './Components/MainInfo/MainInfo'
 import Loader from './Components/Loader/Loader'
@@ -36,7 +35,7 @@ function App() {
       </form>
     </header>
     <main>
-      {data ? <MainInfo data={data}/> : <div className='container-info'><p className='info-text'>Hi, look for some one</p> <img src="https://i.pinimg.com/originals/29/bd/26/29bd261d201e956588ee777d37d26800.gif" width="80%" alt="" /></div>}
+      {data ? <MainInfo data={data}/> : <div className='container-info'><p className='info-text'>Hi, look for some one</p> <img src="/rickandmorty.webp" width="80%" alt="" /></div>}
     </main>
   </>
 }
