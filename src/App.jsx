@@ -11,7 +11,7 @@ function App() {
 
   const fetchData = async () => {
     setLoading(true)
-    const response = await fetch(`https://instagram-server-api.vercel.app/user?username=${username}`)
+    const response = await fetch(`https://instagram-backend-dox.vercel.app/user/${username}`)
     const data = await response.json()
     setData(data)
     setLoading(false)
