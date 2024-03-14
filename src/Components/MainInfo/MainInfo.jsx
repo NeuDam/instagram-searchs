@@ -28,7 +28,7 @@ function MainInfo({ data }) {
       </section>
 
       <section className="section-info section-bottom">
-        <HandlerPosts data={data}/>
+        <HandlerPosts data={data} />
       </section>
     </>
   );

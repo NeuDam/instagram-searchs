@@ -2,17 +2,19 @@ import { useState } from 'react'
 import './App.css'
 import MainInfo from './Components/MainInfo/MainInfo'
 import Loader from './Components/Loader/Loader'
+import firstData from './mock.json'
 
 function App() {
 
   const [username, setUsername] = useState()
-  const [data, setData] = useState()
+  const [data, setData] = useState(firstData)
   const [loading, setLoading] = useState(false)
 
   const fetchData = async () => {
     setLoading(true)
-    const response = await fetch(`https://instagram-backend-dox.vercel.app/user/${username}`)
+    const response = await fetch(`https://instagram-backend-dox.vercel.app/user/${username}`).catch((e) => {console.log(e); setLoading(false); alert('ERROR EN PETICIÓN')})
     const data = await response.json()
+
     setData(data)
     setLoading(false)
   }

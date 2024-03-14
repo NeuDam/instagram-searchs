@@ -1,6 +1,7 @@
 .pic-username{
   width: 100%;
   max-width: 180px;
+  min-height: 120px;
   aspect-ratio: 1/1;
   height: auto;
   border-radius: 50%;

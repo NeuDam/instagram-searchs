@@ -1,7 +1,7 @@
 {
   "name": "instagram-searcher",
   "private": true,
-  "version": "2.0.5",
+  "version": "2.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "swiper": "^11.0.7",
+    "swiper-react": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

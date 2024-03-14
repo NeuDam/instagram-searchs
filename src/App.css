@@ -97,7 +97,6 @@ main{
 
 ::-webkit-scrollbar-thumb{
   background-color: var(--primary-color);
-  border-radius: 5px;
 }
 
 

@@ -14,7 +14,7 @@ function HandlerPosts( {data} ) {
 
   return (
     data.posts.map((post) => {
-      return <Post key={post.id} data={post}/>
+      return <Post key={post.id} data={post} basicInfoProfile={{username: data.username, picture: data.profile_pic}}/>
     })
   )
 }
