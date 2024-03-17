@@ -12,3 +12,7 @@ Search for anyone on Instagram, without logins
   <li><a href="https://animate.style/" target="_blank">ANIMATE CSS</a></li>
   <li><a href="https://swiperjs.com/" target="_blank">SWIPER JS</a></li>
 </ul>
+
+## Creator
+
+<p>**Neudam** copyright, Instagram-Searchs page and the backend api.</p>
