@@ -2,14 +2,16 @@
   width: calc(100% / 3.1);
   height: fit-content;
   aspect-ratio: 1/1;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
-  margin-bottom: .6em;
+  margin-bottom: .2em;
   position: relative;
-  transition: transform .2s;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.594);
+  transition: box-shadow .5s;
   &:hover{
-    transform: scale(1.02);
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.594);
+    & .media-post{
+      transform: scale(1.15);
+    }
     & .basic-post-info{
       transform: translateY(-95%);
     }
@@ -21,6 +23,7 @@
   height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
+  transition: transform .4s;
   object-position: center;
 }
 
@@ -46,16 +49,17 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  transition: box-shadow .5s;
+  transition: box-shadow .3s;
 }
 
 .post:hover .black-effect{
-  box-shadow: 0 -5px 30px 3vh rgba(0, 0, 0, 0.692);
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.413);
 }
 
 
 @media screen and (min-width:1024px){
   .post{
+    margin-bottom: .5em;
     cursor: pointer;
   }
   .child-b-post-info{

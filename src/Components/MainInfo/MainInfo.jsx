@@ -3,7 +3,7 @@
 import HandlerPosts from '../HandlerPosts/HandlerPosts';
 import './MainInfo.css'
 
-function MainInfo({ data }) {
+function MainInfo({ data, postsShow }) {
 
   if (data.status != 'ok'){
     console.log(data)
@@ -28,7 +28,7 @@ function MainInfo({ data }) {
       </section>
 
       <section className="section-info section-bottom">
-        <HandlerPosts data={data} />
+        <HandlerPosts data={data} postsShow={postsShow}/>
       </section>
     </>
   );

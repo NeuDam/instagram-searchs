@@ -45,9 +45,9 @@
 }
 
 .sumbit-button{
-  align-items: center;
-  height: 100%;
-  align-items: center;
+  height: fit-content;
+  padding: 0 5px 0 0;
+  width: fit-content;
   background-color: transparent;
   border: none;
   i{
@@ -58,10 +58,11 @@
 
 main{
   padding-top: 20px;
-  width: 95%;
+  width: 100%;
   min-height: 30vh;
   margin-inline: auto;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .message-warning{
