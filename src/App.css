@@ -100,6 +100,38 @@ main{
   background-color: var(--primary-color);
 }
 
+#my-iframe{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(6, 255, 251);
+  width: 80%;
+  height: 30%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 1px black;
+}
+
+.display-cors-iframe{
+  position: fixed;
+  bottom: 30px;
+  left: 10px;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  & i{
+    color: white;
+    font-size: 32px;
+  }
+}
+
+.show-iframe{
+  display: block !important;
+}
 
 @media screen and (min-width:1024px){
   main{
@@ -110,5 +142,9 @@ main{
   }
   .sumbit-button i,.username-input{
     font-size: 1.5vw;
+  }
+  #my-iframe{
+    width: 40%;
+    height: 50%;
   }
 }

@@ -9,9 +9,9 @@
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
-  font-size: 1.1em;
-  transition: all .4s;
-
+  font-size: 1em;
+  transition: transform .4s;
+  margin-top: 20px;
 }
 
 .more-button::before{
@@ -22,7 +22,7 @@
   width: 0;
   background-image: linear-gradient(to right, rgba(126, 11, 227, 0.792), rgb(3, 171, 255));
   height: 100%;
-  transition: all .4s;
+  transition: transform .4s, width .4s;
   z-index: -1;
   border-radius: 10px;
 }
