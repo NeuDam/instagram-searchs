@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import MainInfo from './Components/MainInfo/MainInfo'
 import Loader from './Components/Loader/Loader'
@@ -18,6 +18,7 @@ function App() {
     setLoading(false)
 
     if (response.status == 400){
+      alert('USER NOT FOUND')
       return
     }
 
@@ -27,26 +28,6 @@ function App() {
 
     setData(data)
   }
-
-  useEffect(() => {
-
-    console.log()
-
-
-
-    const fetchData = async () => {
-      const response = await fetch(`https://instagram-backend-dox.vercel.app/user/ana_d_armas`).catch((e) => {console.log(e)})
-
-      if (response.status === 400) {return}
-
-      const data = await response.json()
-      setPosts(data.posts.length < 12 ? data.basicRating.posts : 12)
-  
-      setData(data)
-    }
-
-    fetchData()
-  },[])
 
   return <>
 

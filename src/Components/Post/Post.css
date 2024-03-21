@@ -12,7 +12,7 @@
       transform: scale(1.15);
     }
     & .basic-post-info{
-      transform: translateY(-95%);
+      transform: translateY(-105%);
     }
   }
 }
@@ -48,12 +48,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  transition: box-shadow .3s;
+  height: 100%;
+  transition: background-position .3s;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.566) 12%, transparent 50%);
 }
 
-.post:hover .black-effect{
-  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.413);
-}
 
 
 @media screen and (min-width:1024px){

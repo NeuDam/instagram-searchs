@@ -23,7 +23,7 @@
   background-color: var(--terciary-color);
   border-radius: 10px;
   width: 80%;
-  max-height: 65vh;
+  max-height: 80vh;
   box-shadow: 5px 5px 30px black;
   overflow: hidden;
   padding: 10px 0 10px 10px;
@@ -33,7 +33,7 @@
 .media-floater{
   width: 99%;
   height: auto;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
   left: 0;
   position: sticky;
   object-fit: cover;
@@ -46,7 +46,6 @@
   position: relative;
   padding-bottom: 3vh;
 }
-
 
 .redirect-button, .close-button{
   font-size: 4vw;
@@ -88,12 +87,27 @@
   background-color: rgb(150, 52, 243) !important;
 }
 
+.text{
+  display: block;
+  font-size: 10px;
+  max-height: 30px;
+  overflow-y: auto;
+}
+
+
 
 @media screen and (min-width:1024px){
+  .text{
+    font-size: 16px;
+    max-height: 150px;
+  }
+  .media-floater{
+    max-height: 85vh;
+  }
   .floater{
     display: flex;
     width:60%;
-    max-height: 90vh;
+    max-height: 85vh;
   }
   .close-button, .redirect-button{
     font-size: 2em;
@@ -121,6 +135,8 @@
 @media screen and (min-width:1200px){
   .floater{
     width: 55%;
+    max-height: 85vh;
+
   }
   .close-button{
     left: 87%;
@@ -144,7 +160,7 @@
     left: 92%;
   }
   .redirect-button{
-    left: 80%;
+    left: 81%;
   }
   .date{
     font-size: 2.5vw;
