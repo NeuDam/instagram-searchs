@@ -12,7 +12,7 @@ function Post({ data, basicInfoProfile }) {
 
   let mediaType
   if (data.carousel_media[0].type == "video"){
-    mediaType = <video src={MAIN_URL_PROXY + data.carousel_media[0].url} crossOrigin="instagram.com" muted loop autoPlay className='media-post'></video>
+    mediaType = <img src={MAIN_URL_PROXY + data.carousel_media[0].preview_video} crossOrigin="instagram.com" className='media-post'/>
   }
   else{
     mediaType = <img src={MAIN_URL_PROXY + data.carousel_media[0].url} alt="" crossOrigin="instagram.com" className='media-post'/>
@@ -25,6 +25,7 @@ function Post({ data, basicInfoProfile }) {
       setShowFloating(true)
     }}>
       {mediaType}
+      {data.carousel_media[0].type === "video" && <i className='bx bxs-video-recording' ></i>}
       <div className="black-effect"></div>
       <div className="basic-post-info">
         <span className="child-b-post-info"><i className='bx bxs-heart'></i><br />{data.ratingInfo.likes}</span>

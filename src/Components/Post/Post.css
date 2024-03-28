@@ -6,7 +6,6 @@
   overflow: hidden;
   margin-bottom: .2em;
   position: relative;
-  transition: box-shadow .5s;
   &:hover{
     & .media-post{
       transform: scale(1.15);
@@ -53,17 +52,24 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.566) 12%, transparent 50%);
 }
 
-
+.bxs-video-recording{
+  left: 5px;
+  bottom: 5px;
+  font-size: 18px;
+  position: absolute;
+  z-index: 30;
+  opacity: .6;
+}
 
 @media screen and (min-width:1024px){
   .post{
     margin-bottom: .5em;
     cursor: pointer;
-    &:hover{
-      box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.594);
-    }
   }
   .child-b-post-info{
     font-size: 1.5vw;
+  }
+  .bxs-video-recording{
+    font-size: 30px;
   }
 }
